@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPX Divider</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; background: #f8f9fa; }
+    .dropzone {
+      border: 2px dashed #007bff;
+      border-radius: 8px;
+      padding: 3em;
+      text-align: center;
+      color: #007bff;
+      background: #fff;
+      margin-bottom: 2em;
+      transition: background 0.2s;
+    }
+    .dropzone.dragover { background: #e3f2fd; }
+    #file-list { margin-top: 2em; }
+    .download-link { display: block; margin: 0.5em 0; }
+  </style>
+</head>
+<body>
+  <h1>GPX Divider</h1>
+  <div id="dropzone" class="dropzone">
+    Drag & drop a large GPX file here
+    <br>
+    <small>or click to select a file</small>
+    <input type="file" id="file-input" accept=".gpx" style="display:none">
+  </div>
+  <div id="file-list"></div>
+  <script src="gpxdivider.js"></script>
+</body>
+</html>
